@@ -1,0 +1,6 @@
+.vscode
+__pycache__
+deployments/
+venv
+pp-ops-assignment.md
+pp-ops-assignment.pdf

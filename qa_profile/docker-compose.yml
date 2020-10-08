@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+
+  tests:
+    build: ./tests/
+    entrypoint: [ '/tests/entrypoint.sh' ]
+    command:  robot .
+    environment:
+      - APP_HOST=app
+      - APP_PORT=8080
+    depends_on:
+      - app
+
+  app:
+    build: ./app/
+    ports:
+      - 8080:8080
+
+
+
