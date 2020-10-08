@@ -4,6 +4,9 @@ import sys
 import requests
 
 def get_env_variable(name):
+    """
+        get environment variables by name
+    """
     try:
         return os.environ[name]
     except KeyError:
